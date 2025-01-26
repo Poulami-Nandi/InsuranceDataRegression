@@ -27,7 +27,7 @@ The dataset for this competition is available [here](https://www.kaggle.com/comp
 - **Sample Submission File (`sample_submission.csv`)**: Demonstrates the expected format for submissions.
 
 **Target Variable**:  
-- `ProdTaken` (1 = Product Taken, 0 = Product Not Taken)
+- `Premium Amount` (1 = Product Taken, 0 = Product Not Taken)
 
 ---
 
@@ -67,14 +67,16 @@ Follow these steps to set up and run the project:
 ```bash
 git clone https://github.com/your-username/playground-s4e12.git
 cd playground-s4e12
-2. Install dependencies
+
+
+### **2. Install dependencies**
 Install the required Python packages:
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-3. Download the dataset
+
+
+### **3. Download the dataset**
 Download the dataset from Kaggle.
 Place the files in the data/ directory.
 Approach
