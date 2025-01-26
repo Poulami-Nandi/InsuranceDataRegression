@@ -1,7 +1,7 @@
 # **Regression model, OLS and VIF on Insuranace Data**
 
 ![Kaggle](https://img.shields.io/badge/Kaggle-Competition-blue.svg)  
-A project solving the Kaggle competition [Playground Series - Season 4, Episode 12](https://www.kaggle.com/competitions/playground-series-s4e12/overview), focused on predicting whether a customer will take a product (`ProdTaken`) based on demographic and travel-related features.
+A project solving the Kaggle competition [Playground Series - Season 4, Episode 12](https://www.kaggle.com/competitions/playground-series-s4e12/overview), focused on predicting whether a customer will take a product (`Premium Amount`) based on demographic and travel-related features.
 
 ---
 
