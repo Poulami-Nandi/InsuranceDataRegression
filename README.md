@@ -67,14 +67,14 @@ Follow these steps to set up and run the project:
 ```bash
 git clone https://github.com/your-username/playground-s4e12.git
 cd playground-s4e12
-
+```
 
 ### **2. Install dependencies**
 Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ### **3. Download the dataset**
 Download the dataset from Kaggle.
@@ -103,29 +103,16 @@ Accuracy: [Insert Accuracy Score]
 AUC-ROC: [Insert AUC-ROC Score]
 How to Make Predictions
 To generate predictions for the test dataset:
-
-Train the model using the prepared training data.
-Use the test dataset to predict and save the results:
-python
+1. Train the model using the prepared training data.
+2. Use the test dataset to predict and save the results:
+```bash
 Copy
 Edit
 # Assuming `model` is your trained model
 predictions = model.predict(test)
 submission = pd.DataFrame({'ID': test_ids, 'ProdTaken': predictions})
 submission.to_csv('submission.csv', index=False)
-Contributing
+```
+
+### **Contributing**
 Contributions are welcome! If you'd like to improve this project, feel free to fork the repository and submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-markdown
-Copy
-Edit
-
-### Notes:
-- Replace **"your-username"** with your GitHub username or project name.
-- Customize the **Results** section after completing your experiments.
-- Add any specific details as needed for your project.
-
-Let me know if you need further assistance!
