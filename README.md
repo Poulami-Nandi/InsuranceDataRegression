@@ -14,7 +14,6 @@ A project solving the Kaggle competition [Playground Series - Season 4, Episode 
 - [Results](#results)
 - [How to Make Predictions](#how-to-make-predictions)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
