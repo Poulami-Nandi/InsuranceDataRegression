@@ -79,35 +79,44 @@ pip install -r requirements.txt
 ### **3. Download the dataset**
 Download the dataset from Kaggle.
 Place the files in the data/ directory.
-Approach
+
+### **Approach**
 Data Preprocessing
-Imputed missing values:
-Numerical features: Filled with the median.
-Categorical features: Filled with the mode.
-Encoded categorical variables using Label Encoding.
-Scaled numerical features using StandardScaler.
-Addressed multicollinearity by removing features with high VIF.
-Modeling
+* Imputed missing values:
+* Numerical features: Filled with the median.
+* Categorical features: Filled with the mode.
+* Encoded categorical variables using Label Encoding.
+* Scaled numerical features using StandardScaler.
+* Addressed multicollinearity by removing features with high VIF.
+
+### **Modeling**
 Trained and evaluated multiple models:
-Logistic Regression for baseline predictions.
-Random Forest for interpretability and handling non-linear relationships.
-XGBoost for optimized performance.
-Used GridSearchCV for hyperparameter tuning.
-Evaluation Metrics
-Accuracy: Measures the overall correctness of predictions.
-AUC-ROC: Evaluates the trade-off between sensitivity and specificity.
-F1-Score: Balances precision and recall for imbalanced datasets.
-Results
-Best Model: [Specify the best model, e.g., XGBoost]
-Accuracy: [Insert Accuracy Score]
-AUC-ROC: [Insert AUC-ROC Score]
-How to Make Predictions
+* Logistic Regression for baseline predictions.
+* OLS
+
+### **Evaluation Metrics**
+* R2 score
+* MSE
+
+### **Results**
+Best Model: [OLS]
+Accuracy: 
+Dep. Variable:         Premium Amount   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     136.9
+Date:                Sun, 26 Jan 2025   Prob (F-statistic):               0.00
+Time:                        12:57:25   Log-Likelihood:            -9.8168e+06
+No. Observations:             1200000   AIC:                         1.963e+07
+Df Residuals:                 1199981   BIC:                         1.963e+07
+Df Model:                          18                                         
+Covariance Type:            nonrobust                                         
+
+
+### **How to Make Predictions**
 To generate predictions for the test dataset:
 1. Train the model using the prepared training data.
 2. Use the test dataset to predict and save the results:
 ```bash
-Copy
-Edit
 # Assuming `model` is your trained model
 predictions = model.predict(test)
 submission = pd.DataFrame({'ID': test_ids, 'ProdTaken': predictions})
