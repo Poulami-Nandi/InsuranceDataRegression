@@ -101,15 +101,15 @@ Trained and evaluated multiple models:
 ### **Results**
 Best Model: [OLS]
 Accuracy: 
-Dep. Variable:         Premium Amount   R-squared:                       0.002
-Model:                            OLS   Adj. R-squared:                  0.002
-Method:                 Least Squares   F-statistic:                     136.9
-Date:                Sun, 26 Jan 2025   Prob (F-statistic):               0.00
-Time:                        12:57:25   Log-Likelihood:            -9.8168e+06
-No. Observations:             1200000   AIC:                         1.963e+07
-Df Residuals:                 1199981   BIC:                         1.963e+07
-Df Model:                          18                                         
-Covariance Type:            nonrobust                                         
+* Dep. Variable:         Premium Amount   R-squared:                       0.002
+* Model:                            OLS   Adj. R-squared:                  0.002
+* Method:                 Least Squares   F-statistic:                     136.9
+* Date:                Sun, 26 Jan 2025   Prob (F-statistic):               0.00
+* Time:                        12:57:25   Log-Likelihood:            -9.8168e+06
+* No. Observations:             1200000   AIC:                         1.963e+07
+* Df Residuals:                 1199981   BIC:                         1.963e+07
+* Df Model:                          18                                         
+* Covariance Type:            nonrobust                                         
 
 
 ### **How to Make Predictions**
@@ -119,7 +119,7 @@ To generate predictions for the test dataset:
 ```bash
 # Assuming `model` is your trained model
 predictions = model.predict(test)
-submission = pd.DataFrame({'ID': test_ids, 'ProdTaken': predictions})
+submission = pd.DataFrame({'ID': test_ids, 'Premium Amount': predictions})
 submission.to_csv('submission.csv', index=False)
 ```
 
